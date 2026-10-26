@@ -138,6 +138,10 @@ public class Campo extends JPanel implements ActionListener {
             pontoJ++;
             reiniciarPosicaoBola(-velocidade);
             verificarFimDeJogo();
+        } else if (bola.getX() > this.getWidth()){
+            pontoPc++;
+            reiniciarPosicaoBola(velocidade);
+            verificarFimDeJogo();
         }
     }
 
